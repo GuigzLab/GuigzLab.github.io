@@ -5,10 +5,12 @@ on:
     branches:
       - master
       - main
+      - source
   pull_request:
     branches:
       - master
       - main
+      - source
   workflow_dispatch:
 
 permissions:
@@ -25,6 +27,8 @@ jobs:
       with:
         ruby-version: '3.2.1'
         bundler-cache: true
+    - name: Install ruby dependencies
+      run: bundle install
     - name: Install and Build 🔧
       run: |
         npm install -g mermaid.cli
