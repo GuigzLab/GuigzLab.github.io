@@ -39,4 +39,4 @@ Avant de présenter les résultats, il est important de comprendre les différen
 
 - **METEOR (Metric for Evaluation of Translation with Explicit ORdering)** : Cette métrique est une combinaison de plusieurs métriques, y compris la précision, le rappel et la similarité syntaxique. Elle a été conçue pour améliorer les faiblesses de la métrique BLEU.
 
-Présentation des résultats et comparaison
+Présentation des résultats et comparaison 
