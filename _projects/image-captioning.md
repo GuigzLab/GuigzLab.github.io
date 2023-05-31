@@ -8,14 +8,29 @@ category: school
 
 authors:
   - name: Guillaume Dufau
-    url: "https://en.wikipedia.org/wiki/Albert_Einstein"
+    url: "https://guigzlab.github.io/"
     affiliations:
       name: Université Paris Cité
+
+toc:
+  - name: Motivation
+  - name: Methodology
+    subsections:
+      - name: Dataset
+      - name: Model
+      - name: Training
+  - name: Évaluation
+
+bibliography: nic-project.bib
+# bibliography: 2018-12-22-distill.bib
+
 ---
 
 # Motivation
 
-La description automatique d'images, ou "Image Captioning", est une tâche majeure en vision par ordinateur et en traitement du langage naturel. Elle consiste à produire une description textuelle qui reflète le contenu d'une image donnée. Dans le cadre de mon projet de Master 2, j'ai implémenté un réseau de neurones NIC (Neural Image Captioning) basé sur le modèle proposé dans l'article de référence "Show and Tell". Cette technologie a de vastes applications, notamment dans les domaines de l'accessibilité, de l'intelligence artificielle et de la recherche d'images.
+Automatically describing the content of an image, or "Image Captioning," is a major task in computer vision and natural language processing. It involves generating a textual description that reflects the content of a given image. As part of my second year of Master's degree, I developed a project where I implemented a NIC (Neural Image Captioning) neural network, leveraging the model proposed in the influential "Show and Tell" paper proposed by Vinyals, Oriol et al. <d-cite key="Vinyals2014ShowAT"></d-cite>
+
+<d-footnote>this is a footnote</d-footnote>
 
 # Illustration
 
@@ -23,7 +38,16 @@ Le modèle NIC est un réseau de neurones profond qui utilise une architecture e
 
 Illustration
 
-# Méthodologie
+# Methodology
+
+## Dataset
+
+## Model
+
+<img src="/assets/img/nic-model.png" style="width:100%;">
+
+## Training
+
 
 Pour entraîner et tester mon modèle, j'ai utilisé le jeu de données Flickr 8K, qui contient 8 000 images annotées chacune par 5 descriptions textuelles différentes.
 
