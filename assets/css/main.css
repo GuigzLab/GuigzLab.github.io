@@ -1053,5 +1053,8 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
     grid-column: none;
   }
 }
+.distill li ul li:not(:last-child) {
+  margin-bottom: 0;
+}
 
 /*# sourceMappingURL=main.css.map */
