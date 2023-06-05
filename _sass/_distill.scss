@@ -149,3 +149,8 @@ d-appendix {
     }
   }
 }
+
+// Nested lists
+.distill li ul li:not(:last-child) {
+  margin-bottom: 0;
+}
