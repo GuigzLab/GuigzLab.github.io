@@ -26,7 +26,7 @@ toc:
       - name: Examples
       - name: Metrics
       - name: Scores
-      - name: Comparison with X
+      - name: Comparison
   - name: Conclusion
 
 bibliography: nic-project.bib
@@ -110,11 +110,21 @@ Before presenting the results, it is important to understand the different metri
 
 ## Scores
 
+The obtained scores are correct, and it can be observed that the model makes sense of most of the images. For reference, human BLEU and ROUGE scores are approximately around 70%, so higher scores would be unlikely.
+
 <div style="text-align: center;">
-  <img src="/assets/img/nic-scores.png" style="width:60%; margin: -10px auto 20px auto;">
+  <img src="/assets/img/nic-scores.png" style="width:60%; margin: 0px auto 10px auto;">
 </div>
 
-## Comparison with X
+## Comparison
+
+Here are the results from an implementation conducted by Arthur Benard, who utilized the encoder portion of CLIP<d-cite key="Radford2021LearningTV"></d-cite>, from OpenAI.
+
+<div style="text-align: center;">
+  <img src="/assets/img/nic-clip.png" style="width:62%; margin: 0px auto 10px auto;">
+</div>
+
+We can notice that the results are slightly different, with lower BLEU scores, equivalent ROUGE scores, and higher METEOR scores. This could indicate that the generated captions may have a different structure but keep a meaning closer to what a human would describe.
 
 # Conclusion
 
