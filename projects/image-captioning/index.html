@@ -72,7 +72,7 @@
     <script async type="text/json">{
       "title": "Image Captioning",
       "description": "A project in which I implemented a Neural Image Caption (NIC) network to generate image captions",
-      "published": "June 5, 2023",
+      "published": "June 6, 2023",
       "authors": [
         {
           "author": "Guillaume Dufau",
@@ -191,7 +191,7 @@
               <li><a href="#examples">Examples</a></li>
               <li><a href="#metrics">Metrics</a></li>
               <li><a href="#scores">Scores</a></li>
-              <li><a href="#comparison-with-x">Comparison with X</a></li>
+              <li><a href="#comparison">Comparison</a></li>
               
             </ul>
 <div><a href="#conclusion">Conclusion</a></div>
@@ -290,11 +290,21 @@
 
 <h2 id="scores">Scores</h2>
 
+<p>The obtained scores are correct, and it can be observed that the model makes sense of most of the images. For reference, human BLEU and ROUGE scores are approximately around 70%, so higher scores would be unlikely.</p>
+
 <div style="text-align: center;">
-  <img src="/assets/img/nic-scores.png" style="width:60%; margin: -10px auto 20px auto;">
+  <img src="/assets/img/nic-scores.png" style="width:60%; margin: 0px auto 10px auto;">
 </div>
 
-<h2 id="comparison-with-x">Comparison with X</h2>
+<h2 id="comparison">Comparison</h2>
+
+<p>Here are the results from an implementation conducted by Arthur Benard, who utilized the encoder portion of CLIP<d-cite key="Radford2021LearningTV"></d-cite>, from OpenAI.</p>
+
+<div style="text-align: center;">
+  <img src="/assets/img/nic-clip.png" style="width:62%; margin: 0px auto 10px auto;">
+</div>
+
+<p>We can notice that the results are slightly different, with lower BLEU scores, equivalent ROUGE scores, and higher METEOR scores. This could indicate that the generated captions may have a different structure but keep a meaning closer to what a human would describe.</p>
 
 <h1 id="conclusion">Conclusion</h1>
 
